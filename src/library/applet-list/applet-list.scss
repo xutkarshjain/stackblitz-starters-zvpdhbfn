@@ -1,0 +1,11 @@
+.applet-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .applet {
+        background-color: #f5f5f5;
+        color: black;
+        border: 1px solid #ebebeb;
+        display: flex;
+    }
+}

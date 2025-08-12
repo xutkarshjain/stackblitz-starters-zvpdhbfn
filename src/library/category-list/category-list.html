@@ -1,0 +1,14 @@
+<ul class="list-group mt-3">
+  @for (category of categoryList;track category.name; let i = $index){
+  <li
+    class="list-group-item justify-content-between align-items-center"
+    [class.selected]="category.name === selectedCategory.name"
+    (click)="selectCategory(category)"
+  >
+    {{ category.name }}
+    <span class="badge rounded-pill">{{ category.appletCount }}</span>
+  </li>
+  } @empty {
+  <p class="text-center text-secondary">No Category found</p>
+  }
+</ul>

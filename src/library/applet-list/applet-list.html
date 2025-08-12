@@ -1,0 +1,11 @@
+<div class="content-holder">
+  <div class="applet-container">
+    @for(applet of appletList;track applet.name){
+    <div class="applet p-3 rounded justify-content-between align-items-center">
+      {{ applet.name }}
+    </div>
+    } @empty {
+    <p class="text-center text-secondary mt-5">No Applet found</p>
+    }
+  </div>
+</div>

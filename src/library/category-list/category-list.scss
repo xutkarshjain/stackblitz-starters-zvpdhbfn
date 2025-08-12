@@ -1,0 +1,28 @@
+li {
+    background-color: white;
+    color: #337ab7;
+    margin: 2px;
+    border-radius: inherit;
+    // box-shadow: 1px 1px 6px 1px #ededed;
+    border: none;
+    &:hover,
+    &.selected {
+        color: white;
+        .badge {
+            background-color: white;
+            color: #337ab7;
+        }
+        & {
+            background-color: #3379b7a2;
+        }
+
+        &.selected {
+            background-color: #337ab7;
+        }
+    }
+
+    .badge {
+        background-color: gray;
+        color: white;
+    }
+}
