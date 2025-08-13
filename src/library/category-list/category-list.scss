@@ -1,3 +1,7 @@
+.category-container {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
 li {
     background-color: white;
     cursor: pointer;
