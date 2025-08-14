@@ -28,6 +28,6 @@ export class App implements OnInit {
   };
 
   ngOnInit(): void {
-    addBigData(this.lib, 2000, 5000);
+    addBigData(this.lib, 5000, 20000);
   }
 }
